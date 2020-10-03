@@ -1,23 +1,16 @@
 Topic for algorithm:-
 
-    <ol>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        
-    </ol>
+    1.Analysis of Algorithms0
+    2.String
+    3.Searching 
+    4.Sorting
+    5.Math(Number theory)
+    6.Greedy Algorithms
+    7.Recursion
+    8.Divide and conquer
+    9.Dynamic Programming
+    10.Pattern Searching
+    11.Backtracking
+    12.Geometric Algorithms
+    13.Bit Algorithms
+    14.Graph Algorithms
