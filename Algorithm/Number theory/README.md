@@ -1,7 +1,7 @@
 # Refrence
 
 [Hacker Earth- Number Theory tutorial]( https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/tutorial/)
-[Modular Arithmetic] (http://theoryofprogramming.com/2014/12/24/modular-arithmetic-properties/ )
+[Modular Arithmetic](http://theoryofprogramming.com/2014/12/24/modular-arithmetic-properties/ )
 [Pigeon hole principle] ( https://www.geeksforgeeks.org/discrete-mathematics-the-pigeonhole-principle/ )
 [Sieve of Eratosthenes] (https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-2/tutorial/)
 [Primality Test - Fermat Primality Testing,Miller-Rabin Primality Testing] (https://www.hackerearth.com/practice/math/number-theory/primality-tests/tutorial/)
