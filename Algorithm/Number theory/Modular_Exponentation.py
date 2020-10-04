@@ -33,14 +33,13 @@ y = Exponent
 m = 1e9+7 or 1000000007
 '''
 def f(x,e,m):
-    y = 1
-    while e>0:
-        if x%2 == 0:
-            x = (x*x)%m
-            e = e//2
-        else:
-            y = (x*y)%m
-            e = e - 1
-    return y
+    if(e==0):
+        return 1
+    elif(e%2 == 0):        //n is even
+        return f( (x*x) %m, e/2, m )
+    else:                  //n is odd
+        return (x * f((x*x) % m, (e-1)/2, m))%m
+
+
 print(f(1233232,212344,1e9+7))
 236644787
