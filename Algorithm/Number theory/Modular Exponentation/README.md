@@ -1,6 +1,6 @@
-# In python we use pow() function to use fast exponentiation
-# pow(x,e,m)
-# will provide the same result
+## Modular Exponentation
+
+In python we use pow() function to use fast exponentiation  pow(x,e,m) will provide the same result
 
 '''
 Algorithm:
