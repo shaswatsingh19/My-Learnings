@@ -4,7 +4,7 @@ Topic for algorithm:-
     2.String
     3.Searching 
     4.Sorting
-    5.[Number_Theory](Number theory)
+    5.Number Theory
     6.Greedy Algorithms
     7.Recursion
     8.Divide and conquer
