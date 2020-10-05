@@ -1,7 +1,8 @@
 # Refrence
 
 [Number Theory tutorial -Hacker Earth]( https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/tutorial/)                                                          
-[Modular Arithmetic- Theory of Programming](http://theoryofprogramming.com/2014/12/24/modular-arithmetic-properties/ )                                                                                           
+[Modular Arithmetic- Theory of Programming](http://theoryofprogramming.com/2014/12/24/modular-arithmetic-properties/ )                                                                      
+[Eculiden Algorithm for GCD - Youtube](https://www.youtube.com/watch?v=VWOUh4w_zVI)                                                                                                     
 [Pigeon hole principle -GFG]( https://www.geeksforgeeks.org/discrete-mathematics-the-pigeonhole-principle/ )                                                                                 
 [Sieve of Eratosthenes - Hacker Earth](https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-2/tutorial/)                                                                            
 [Primality Test - Fermat Primality Testing,Miller-Rabin Primality Testing - Hacker Earth](https://www.hackerearth.com/practice/math/number-theory/primality-tests/tutorial/)                                         
