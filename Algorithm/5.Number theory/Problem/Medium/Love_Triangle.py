@@ -1,3 +1,5 @@
+# https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/can-you-guess-1/
+
 def base(n):
     if n<9:
         return n
