@@ -1,0 +1,28 @@
+Problem :- https://codeforces.com/contest/490/problem/A
+
+# import sys
+# sys.stdin = open('input.txt','r')
+# sys.stdout = open('output.txt','w')
+
+
+n  = int(input())
+arr =list(map(int,input().split()))
+p = []
+m = []
+pe = []
+
+for i in range(len(arr)):
+	if arr[i] ==1:
+		p.append(i)
+	elif arr[i] == 2:
+		m.append(i)
+	else:
+		pe.append(i)
+if len(p) == 0 or len(m) == 0 or len(pe) == 0:
+	print(0)
+else:
+	mini = min(len(p),len(m),len(pe))
+	print(mini)
+	for i in range(mini):
+		print(p[i]+1,m[i]+1,pe[i]+1)
+ 
