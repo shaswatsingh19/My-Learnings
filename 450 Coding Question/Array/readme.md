@@ -1,5 +1,4 @@
-450 Coding question 
+## Array Coding question 
 
 
-### Array
-   1.[Reverse the Array](reverseTheArray.py)
+1.[Reverse the Array](reverseTheArray.py)
