@@ -11,3 +11,8 @@ def remove_even(li):
 lst = [5,11,44,20,55,100,111]
 print('List now:',lst)
 print('After removing even number',remove_even(lst))
+
+'''
+List now: [5, 11, 44, 20, 55, 100, 111]
+After removing even number [5, 11, 55, 111]
+'''
