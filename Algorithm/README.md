@@ -1,6 +1,6 @@
 Topic for algorithm:-
 
-    1.Analysis of Algorithms0
+    1.Analysis of Algorithms
     2.String
     3.Searching 
     4.Sorting
