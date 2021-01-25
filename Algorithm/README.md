@@ -12,5 +12,5 @@ Topic for algorithm:-
     10.Pattern Searching
     11.Backtracking
     12.Geometric Algorithms
-    13.Bit Algorithms
+    13.Bitwise Manipulation
     14.Graph Algorithms
