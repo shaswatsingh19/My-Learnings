@@ -1,5 +1,6 @@
 public class PrimeOrNot {
     public static void main(String[] args) {
+// sieve of eratosthenes
         long n = 1999991312;
         boolean flag  = true;
         for (int i=2 ; i*i<n ; i++){

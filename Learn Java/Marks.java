@@ -11,6 +11,10 @@ class Marks{
         float per = ((m1+m2+m3))/3;
 
         System.out.println(per);
+
+        double a = 11.2;
+        double b = 2.5;
+        System.out.println(a*b);
         
     inp.close();
     }

@@ -5,8 +5,9 @@ public class SetithBit {
         // 1000 | (1<<2) after setting we have 1100
         System.out.println("WE want to set 2 bit");
         int i = 2;
-        int check = 1<<2;
+        int check = 1<<i;
         num = num | check;
         System.out.println(num);
+
     }
 }
