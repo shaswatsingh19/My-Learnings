@@ -1,0 +1,22 @@
+types of Inheritance :-
+
+1.Single =>class A ,class B
+class B extends class A
+
+2.Mutlilevel => class A, class B , class c
+class B extends class A
+class C extends class B
+that is C >= B >= A
+
+3.Hierarchical =>class A, class B , class c
+class B extends class A
+class C extends class A
+that is B>= A and C>= A , A is parent and B and C are siblings
+
+4.Multiple => not supported in java but can achieved through java interface 
+=>class A, class B , class c
+class C extends A
+class C extends B
+that is C>= (A and B) A,B are parents and C is child of A and B
+
+5.Hybrid => could be any one of them
