@@ -1,0 +1,1 @@
+Solution of coding question of different companies that I receive daily on mail by Daily Coding Problem [DCC](https://www.dailycodingproblem.com/)
