@@ -3,8 +3,8 @@ Write a program to cyclically rotate an array by one.
 
 '''
 import sys
-sys.stdin = open('input.txt','r')
-sys.stdout = open('output.txt','w')
+# sys.stdin = open('input.txt','r')
+# sys.stdout = open('output.txt','w')
 
 #code
 t = int(input())
