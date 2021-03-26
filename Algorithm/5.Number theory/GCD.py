@@ -1,4 +1,4 @@
-'''
+2'''
 The GCD of two or more numbers is the largest positive number that divides all the numbers that are considered.
 For example, the GCD of 6 and 10 is 2 because it is the largest positive number that can divide both 6 and 10.
 '''
