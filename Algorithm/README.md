@@ -1,7 +1,8 @@
 Topic for algorithm:-
-
+    
+    0.Random
     1.Analysis of Algorithms
-    2.String
+    2.String Algorithms
     3.Searching 
     4.Sorting
     5.Number Theory

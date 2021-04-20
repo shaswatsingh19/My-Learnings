@@ -1,16 +1,17 @@
 Topic in Data Structure:-
 
     1.Array
-    2.Linked List
-    3.Stack
-    4.Queue
-    5.Binary Tree
-    6.Binary Search Tree
-    7.Heap
-    8.Hashing
-    9.Graph
-    10.Matrix
-    11.Trie
-    12.Segment tree
-    13.Avl Tree
-    14.Red Black Tree
+    2.String
+    3.Linked List
+    4.Stack
+    5.Queue
+    6.Binary Tree
+    7.Binary Search Tree
+    8.Heap
+    9.Hash Table
+    10.Graph
+    11.Matrix
+    12.Trie
+    13.Segment tree
+    14.Avl Tree
+    15.Red Black Tree
