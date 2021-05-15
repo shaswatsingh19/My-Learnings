@@ -1,5 +1,6 @@
 // httpsleetcode.comproblemsmajority-element
 // based ob boyer moore voting algorithm
+
 class Solution {
     public int majorityElement(int[] nums) {
      
