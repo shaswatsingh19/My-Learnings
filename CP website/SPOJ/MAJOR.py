@@ -24,7 +24,8 @@ QUESTION:
         NO
         NO
 
-SOLUTION:
+
+Solution :
 
         t = int(input())
         while t:
