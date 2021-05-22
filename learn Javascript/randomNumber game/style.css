@@ -1,0 +1,17 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.container{
+    width:800px;
+    border:5px solid grey;
+    text-align:center;
+  }
+  div{
+    margin:5px;
+  }
+
+.resultParas{
+    width:400px;
+    text-align: center;
+    margin: auto;
+}
