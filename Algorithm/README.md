@@ -1,7 +1,6 @@
 Topic for algorithm:-
     
-    0.Random
-    1.Analysis of Algorithms
+    1.Two Pointers
     2.String Algorithms
     3.Searching 
     4.Sorting
