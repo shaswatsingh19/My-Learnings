@@ -6,6 +6,6 @@ class Solution {
             ans = ans ^ i;
         }
         return ans;
-        // used bit manipulation as xor of two same is 0
+        // used bit manipulation as xor of two same is 0.
     }
 }
