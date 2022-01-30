@@ -7,25 +7,30 @@ class ListNode:
 		self.next = next
 
 """
-# https://workat.tech/problem-solving/practice/intersection-two-linked-lists
 
 class Solution:
 	def getIntersectionNode(self, a: ListNode, b: ListNode) -> Optional[ListNode]:
-
-#       O(N) Time O(1) Space	
-
+		
+# 		O(N) time and O(1)
 		t1 = a
 		t2 = b
-		while(t1 != None and t2!= None):
-			if(t1==t2):return t1
-			t1= t1.next
-			t2= t2.next
+		
+		if(t1 == None or t2 == None):
+			return None
+		
+		while(t1 != t2):
+			
 			if(t1==None):
 				t1 = b
-			elif (t2==None):
-				t2 = a
+			else:
+				t1= t1.next
 				
-		return None
+			if (t2==None):
+				t2 = a
+			else:
+				t2= t2.next
+				
+		return t1
 		
 		
 		
