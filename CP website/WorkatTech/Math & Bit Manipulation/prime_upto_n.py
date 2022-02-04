@@ -1,9 +1,8 @@
-# https://workat.tech/problem-solving/practice/primes-upto-n
+# https://workat.tech/problem-solving/practice/primes-upto-n/editorial
 class Solution:
 	def primesUptoN(self, n: int) -> List[int]:
 		# add your logic here
 		
-		# time - O(N*sqrt(N)) 
 		prime = []
 		for i in range(2,n+1):
 			check = True
