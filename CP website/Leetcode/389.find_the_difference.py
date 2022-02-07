@@ -13,6 +13,7 @@ class Solution:
         
         return chr(res)
 
+
 #             di ={}
 #             for i in t:
 #                 if i not in di:
@@ -29,6 +30,5 @@ class Solution:
 #                 if v>0:
 #                     ans = k
 #                     break
-
 #             return ans
 
