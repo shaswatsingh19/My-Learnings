@@ -14,5 +14,4 @@ class Solution:
             else:
                 i=j
                 
-            
         return len(nums)
