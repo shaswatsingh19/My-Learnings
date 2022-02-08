@@ -33,7 +33,7 @@ print(fib(t))
 
 '''
 
-O(2^n) time and O(n) space Complexity
+O(2^n) time and O(1) space Complexity
 Input:
 5
 Output:
