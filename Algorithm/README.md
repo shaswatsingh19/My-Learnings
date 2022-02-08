@@ -8,9 +8,9 @@ Topic for algorithm:-
     6.Greedy Algorithms
     7.Recursion
     8.Divide and conquer
-    9.Dynamic Programming
-    10.Pattern Searching
-    11.Backtracking
+    9.Backtracking
+    10.Dynamic Programming
+    11.Pattern Searching
     12.Geometric Algorithms
     13.Bit Manipulation
     14.Graph Algorithms
