@@ -1,5 +1,5 @@
 a = [3,1,2]
-n = 3
+n = len(a)
 # subsequence = 2^n
 def f(i,l):
     if i>=n:
