@@ -23,9 +23,6 @@ class Solution:
 #         for i in s:
 #             ind = ord(i)-97
 #             if arr[ind]==1:
-#                 ans = min(ans,s.index(i))
-        
-#         if ans==9999999:
-#             return -1
-#         return ans
-            
+#                    return s.index(i)
+#       
+#        return -1
