@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/max-consecutive-ones-ii/submissions/
+# https://leetcode.com/problems/max-consecutive-ones-ii/
 class Solution:
     def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
         i=0
