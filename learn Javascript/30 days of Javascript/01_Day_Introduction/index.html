@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline script</title>
+    
+</head>
+<body>
+    
+    <button onclick="alert('inline script alert button')">Button 1</button>
+    
+    <script >
+        console.log("Internal Script");
+        console.log("Can write internal script inside head and body, but body is more preferred")
+        </script>
+
+    <!-- External script can be witten in head or body but preferre at the end of body -->
+    <script src = 'index.js'></script>
+    <script src = 'helloworld.js'></script>
+    <script src = 'exercise.js'></script>
+</body>
+</html>
