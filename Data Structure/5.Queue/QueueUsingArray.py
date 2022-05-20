@@ -25,13 +25,13 @@ class Queue:
 		return self.arr[self.rear]
 		
 
-	def push(self, element: int) -> None:
+	def enqueue(self, element: int) -> None:
 		self.rear +=1
 		self.arr[self.rear] = element
 		
 		
 
-	def pop(self) -> None:
+	def dequeue(self) -> None:
 		popped = self.arr[self.f]
 		self.arr[self.f]  = -1
 		self.f+=1
