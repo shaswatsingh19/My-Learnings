@@ -45,76 +45,153 @@ const weight = (mass, gravity = 9.81) => mass*gravity
 
 console.log(weight(2))
 
-// Temperature in oC can be converted to oF using this formula: oF = (oC x 9/5) + 32. Write a function which convert oC to oF convertCelsiusToFahrenheit.
+// Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
+function findMax(a,b,c){
+    if (a>=b && a>=c) return a
+    else if (b>=a && b>=c) return b
+    return c
+}
+
+console.log(findMax(1,5,2))
+
+console.log('LEVEL 2')
+
+// Linear equation is calculated as follows: ax + by + c = 0. Write a function which calculates value of a linear equation, solveLinEquation.
 
 
-/*
+// Quadratic equation is calculated as follows: ax2 + bx + c = 0. Write a function which calculates value or values of a quadratic equation, solveQuadEquation.
 
+function solveQuadratic(a=0,b=0,c=0){
+    let x1 = (-b + Math.sqrt(b*b - 4*a*c ))/ 2  * a
+    
+    let x2 = (-b - Math.sqrt(b*b - 4*a*c ))/ 2  * a
 
-Body mass index(BMI) is calculated as follows: bmi = weight in Kg / (height x height) in m2. Write a function which calculates bmi. BMI is used to broadly define different weight groups in adults 20 years old or older.Check if a person is underweight, normal, overweight or obese based the information given below.
+    return {x1,x2}
 
-The same groups apply to both men and women.
-Underweight: BMI is less than 18.5
-Normal weight: BMI is 18.5 to 24.9
-Overweight: BMI is 25 to 29.9
-Obese: BMI is 30 or more
-Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer.
-
-Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
-
-console.log(findMax(0, 10, 5))
-10
-console.log(findMax(0, -10, -2))
-0
-
-Exercises: Level 2
-Linear equation is calculated as follows: ax + by + c = 0. Write a function which calculates value of a linear equation, solveLinEquation.
-
-Quadratic equation is calculated as follows: ax2 + bx + c = 0. Write a function which calculates value or values of a quadratic equation, solveQuadEquation.
-
+}
 console.log(solveQuadratic()) // {0}
 console.log(solveQuadratic(1, 4, 4)) // {-2}
 console.log(solveQuadratic(1, -1, -2)) // {2, -1}
 console.log(solveQuadratic(1, 7, 12)) // {-3, -4}
 console.log(solveQuadratic(1, 0, -4)) //{2, -2}
 console.log(solveQuadratic(1, -1, 0)) //{1, 0}
-Declare a function name printArray. It takes array as a parameter and it prints out each value of the array.
 
-Write a function name showDateTime which shows time in this format: 08/01/2020 04:08 using the Date object.
+// Declare a function name printArray. It takes array as a parameter and it prints out each value of the array.
 
+function printArray(){
+    for (let el of arguments){
+        // arguments is special keyword
+        console.log(el)
+    }
+}
+
+printArray([12,42,4335,3424,234,23432,423,4234])
+
+// Write a function name showDateTime which shows time in this format: 08/01/2020 04:08 using the Date object.
+
+function showDateTime(){
+
+    let now  = new Date()
+    console.log(now.getDate()+'/'+now.getMonth()+"/"+now.getFullYear()+' '+now.getHours()+":"+now.getMinutes())
+}
 showDateTime()
-08/01/2020 04:08
-Declare a function name swapValues. This function swaps value of x to y.
 
-swapValues(3, 4) // x => 4, y=>3
-swapValues(4, 5) // x = 5, y = 4
-Declare a function name reverseArray. It takes array as a parameter and it returns the reverse of the array (don't use method).
+// Declare a function name swapValues. This function swaps value of x to y.
 
+function swapValues(a,b){
+    let temp = a
+    a = b
+    b = temp
+    return {a,b}
+}
+
+console.log(swapValues(2,55))
+
+// Declare a function name reverseArray. It takes array as a parameter and it returns the reverse of the array (don't use method).
+function reverseArray(arr){
+    let i = 0
+    let j = arr.length - 1
+    while (i<=j){
+        let temp = arr[i]
+        arr[i] = arr[j]
+        arr[j] = temp
+        i+=1
+        j-=1
+    }
+    return arr
+}
 console.log(reverseArray([1, 2, 3, 4, 5]))
 //[5, 4, 3, 2, 1]
 console.log(reverseArray(['A', 'B', 'C']))
 //['C', 'B', 'A']
-Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
 
-Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
+// Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
 
-Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
+function capitalizeArray(arr){
+    for (let i = 0 ;i<arr.length;i++){
+        arr[i] = arr[i].toUpperCase()
+    }
+    return arr
+}
 
-Declare a function name sumOfNumbers. It takes a number parameter and it adds all the numbers in that range.
+console.log(capitalizeArray(['asda','apple','mango','car']))
 
-Declare a function name sumOfOdds. It takes a number parameter and it adds all the odd numbers in that - range.
+// Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
 
-Declare a function name sumOfEven. It takes a number parameter and it adds all the even numbers in that - range.
+function addItem(arr,item){
+    arr.push(item)
+    return arr
+}
 
-Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
+console.log(addItem(['asda','apple','mango','car'],'pen'))
 
-evensAndOdds(100);
-The number of odds are 50.
-The number of evens are 51.
-Write a function which takes any number of arguments and return the sum of the arguments
+// Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
 
-sum(1, 2, 3) // -> 6
-sum(1, 2, 3, 4) // -> 10
+function removeItem(arr,index=-1){
+    if (index > arr.length || index<0){
+        return 'Index is not correct'
+    }
+    let start = arr.slice(0,index)
+    let end = arr.slice(index+1,)
+    return start.concat(end)
+}
+
+console.log(removeItem(['asda','apple','mango','car'],3))
+
+// Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
+
+function evensAndOdds(n){
+    let even = 0
+    let odd =0
+    for (let el=1;el<=n;el++){
+        if (el%2==0){
+            even += 1
+        }
+        else{
+            odd += 1
+        }
+    }
+
+    return {even,odd}
+}
+
+console.log(evensAndOdds(7))
+
+// Write a function which takes any number of arguments and return the sum of the arguments
+function sumOfArgument() {
+    let sum = 0
+    for (let el of arguments) {
+      sum += el
+    }
+    return sum
+  }
+
+
+console.log(sumOfArgument(2,3,3))
+console.log(sumOfArgument(22,1,3))
+console.log(sumOfArgument(2))
+
+/*
 Writ a function which generates a randomUserIp.
 
 Write a function which generates a randomMacAddress
@@ -190,9 +267,16 @@ Write a function which checks if all the items of the array are the same data ty
 
 JavaScript variable name does not support special characters or symbols except $ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
 
-Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
-
-sevenRandomNumbers()
 [(1, 4, 5, 7, 9, 8, 0)]
-Write a function called reverseCountries, it takes countries array and first it copy the array and returns the reverse of the original array
 */
+// Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
+
+let sevenRandomNumbers = () => {
+    let i= 0
+    let randomArray = []
+    while (i<7){
+        let rand = Math.floor(Math.random()*10)
+        
+        if ()
+    }
+}
