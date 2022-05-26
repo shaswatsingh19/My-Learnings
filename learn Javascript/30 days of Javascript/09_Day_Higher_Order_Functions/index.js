@@ -144,22 +144,65 @@ const sum = numbers.reduce((acc,curr) => acc += curr )
 console.log(sum)
 
 // Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
+const allCountries = countries.reduce((acc,curr) => acc = acc+curr+' ', ' ')
+
+console.log(allCountries)
+
+// Explain the difference between some and every
+console.log('Some check for true if atleast one condition is True')
+console.log('Every check for true if all condition are True')
+
+// Use some to check if some names' length greater than seven in names array
+const ifGreaterThan7 = names.some(name => name.length>7)
+console.log(ifGreaterThan7)
+
+// Use every to check if all the countries contain the word land
+const ifAllContainsLand = countries.every(country => country.toLowerCase().includes('land'))
+console.log(ifAllContainsLand)
+
+// Explain the difference between find and findIndex.
+console.log('Find finds the value if the current logic')
+console.log('FindINdex finds the index of the current logic')
+
+// Use find to find the first country containing only six letters in the countries array
+const CountryWith6Letters = countries.find(country => country.length === 6)
+console.log(CountryWith6Letters)
+
+
+// Use findIndex to find the position of the first country containing only six letters in the countries array
+const CountryIndexWith6Letters = countries.findIndex(country => country.length === 6)
+console.log(CountryIndexWith6Letters)
+
+// Use findIndex to find the position of Norway if it doesn't exist in the array you will get -1.
+const norwayIndex = countries.findIndex(country => country === 'Norway') // return -1 if not found
+console.log(norwayIndex)
+
+// Use findIndex to find the position of Russia if it doesn't exist in the array you will get -1.
+const russiaIndex = countries.findIndex(country => country === 'Russia') // return -1 if not found
+console.log(russiaIndex)
+
+
+console.log("LEVEL 2")
+
+// Find the total price of products by chaining two or more array iterators(eg. arr.map(callback).filter(callback).reduce(callback))
+
+const totalPrice = products.map(product => product.price).filter(product => typeof product == 'number').reduce((acc,curr) => acc += curr)
+console.log(totalPrice)
+
+// Find the sum of price of products using only reduce(callback))
+const totalPriceWithReduce = products.reduce((acc,curr) => {
+    if (typeof curr.price === 'number'){
+        acc += curr.price
+    }
+    return acc 
+},0)
+console.log(totalPriceWithReduce)
+
+// Declare a function called categorizeCountries which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
 
 
 /*
 
-Explain the difference between some and every
-Use some to check if some names' length greater than seven in names array
-Use every to check if all the countries contain the word land
-Explain the difference between find and findIndex.
-Use find to find the first country containing only six letters in the countries array
-Use findIndex to find the position of the first country containing only six letters in the countries array
-Use findIndex to find the position of Norway if it doesn't exist in the array you will get -1.
-Use findIndex to find the position of Russia if it doesn't exist in the array you will get -1.
-Exercises: Level 2
-Find the total price of products by chaining two or more array iterators(eg. arr.map(callback).filter(callback).reduce(callback))
-Find the sum of price of products using only reduce reduce(callback))
-Declare a function called categorizeCountries which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
 Create a function which return an array of objects, which is the letter and the number of times the letter use to start with a name of a country.
 Declare a getFirstTenCountries function and return an array of ten countries. Use different functional programming to work on the countries.js array
 Declare a getLastTenCountries function which which returns the last ten countries in the countries array.
