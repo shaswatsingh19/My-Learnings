@@ -1,4 +1,22 @@
-// import {countries_data}  from './countries_data'
+import {countries_data}  from './countries_data'
+
+
+console.log(countries_data[0])
+
+console.log(coun)
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 let arr = [1,2,3,4,5]
 

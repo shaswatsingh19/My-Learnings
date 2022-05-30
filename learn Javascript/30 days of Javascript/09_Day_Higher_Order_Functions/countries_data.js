@@ -1,4 +1,4 @@
-const countries_data = [
+export const countries_data = [
 	{
 			"name": "Afghanistan",
 			"capital": "Kabul",
