@@ -1,14 +1,15 @@
 console.log('LEVEL 1')
 
-/*
 const constants = [2.72, 3.14, 9.81, 37, 100]
 const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway']
+
 const rectangle = {
   width: 20,
   height: 10,
   area: 200,
   perimeter: 60
 }
+
 const users = [
 {
   name:'Brook',
@@ -53,11 +54,31 @@ const users = [
   age:20
 }
 ]
-Destructure and assign the elements of constants array to e, pi, gravity, humanBodyTemp, waterBoilingTemp.
-Destructure and assign the elements of countries array to fin, est, sw, den, nor
-Destructure the rectangle object by its properties or keys.
-Exercises: Level 2
-Iterate through the users array and get all the keys of the object using destructuring
+
+// Destructure and assign the elements of constants array to e, pi, gravity, humanBodyTemp, waterBoilingTemp.
+let [e,pi,gravity , humanBodyTemp,waterBoilingTemp ] = constants
+
+console.log(pi)
+
+// Destructure and assign the elements of countries array to fin, est, sw, den, nor
+
+let [ fin , est ,sw , den , nor ] = countries
+
+
+// Destructure the rectangle object by its properties or keys.
+
+let {width , height ,area , perimeter } = rectangle
+
+console.log(width)
+
+// Iterate through the users array and get all the keys of the object using destructuring
+for (const {name,scores,skills,age} of users){
+  console.log(name,scores,skills[0],age)
+}
+
+
+/*
+
 Find the persons who have less than two skills
 Exercises: Level 3
 Destructure the countries object print name, capital, population and languages of all countries
