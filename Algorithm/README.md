@@ -1,7 +1,7 @@
 Topic for algorithm:-
     
     1.Two Pointers
-    2.String Algorithms
+    2.Prefix Sum
     3.Searching 
     4.Sorting
     5.Number Theory
