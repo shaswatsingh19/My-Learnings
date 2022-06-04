@@ -1,9 +1,10 @@
-class Emp {
-    constructor(firstName,lastName,id,sal){
+class Person {
+    constructor(firstName,lastName,age,country,city){
         this.firstName = firstName
         this.lastName = lastName
-        this.sal =  sal
-        this.id = id
+        this.age = age
+        this.country = country
+        this.city = city
         this.skills = []
     }
 
@@ -11,12 +12,15 @@ class Emp {
         const fullName = this.firstName +' '+this.lastName
         return fullName
     }
-    get getSalary(){
-        return this.sal
+    get getCountry(){
+        return this.country
     }
-    get getSkills(){
-        return this.skills
+    get getCity(){
+        return this.city
     }
+    /**
+     * @param {any} skill
+     */
     set setSkills(skill){
         this.skills.push(skill)
     }
@@ -24,9 +28,9 @@ class Emp {
 
 }
 
-const emp1 = new Emp('Santosh','Sinha',1,22)
+const emp1 = new Person('Santosh','Sinha',12,'India','Raipur')
 console.log(emp1.getFullName())
-console.log(emp1.getSalary) //Not a function it is a property
+console.log(emp1.getCountry) //Not a function it is a property
 emp1.setSkills = 'HTML'
 emp1.setSkills = 'CSS'
 emp1.setSkills = 'Python'
@@ -96,3 +100,30 @@ std1.setAge = 14
 
 console.log(std1.getName)
 console.log(std1.getAge)
+
+
+// Inheritance
+
+class Student2 extends Person{
+
+    constructor(firstName,lastName,age,country,city,gender){
+        super(firstName,lastName,age,country,city)
+        this.gender = gender
+    }
+    saySomething(){
+        console.log('CHILD of person class')
+    }
+    // getFullName in (Person) parent class is overridden by the below function in student2 class
+    getFullName(){
+        const fullName = this.firstName +' '+this.lastName
+        return "My Name is "+ fullName
+    }
+    
+}
+
+const s1 = new Student2('RAj','Patel',21,'USA','Dallas',"M")
+s1.saySomething()
+console.log(s1.getCity)
+console.log(s1.getFullName())
+
+
