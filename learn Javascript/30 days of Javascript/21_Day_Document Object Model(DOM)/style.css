@@ -1,0 +1,17 @@
+.designer-btn{
+    background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+}
+
+.cl1{
+    /* added by classList.add() function and will be removed in 5 sec by classList.remove() using setTimeout */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+}
+.cl2:hover{
+    font-size: larger   ;
+}
+.cl3{
+    margin: 10px;
+}
