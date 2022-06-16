@@ -6,12 +6,11 @@ h3.textContent = 'Day 22 Exercise'
 h3.style.fontSize = '24px'
 console.log(h3)
 
-document.body.append(h3)
+document.body.prepend(h3)
 
-const h4 = document.createElement('h4')
+let h4 = document.createElement('h4')
 
 
-document.body.append(h4)
 
 var i =5
 
@@ -20,6 +19,7 @@ setInterval(() =>{
     h4.style.fontSize = '24px'
     i-=1
 },1000)
+document.body.append(h4)
 
 setTimeout(() => {
     document.body.removeChild(h4)
