@@ -51,9 +51,9 @@ const input = document.querySelector('input')
         p.textContent = e.target.value
       })
       
-      document.querySelector('input').addEventListener('blur', (e) => {
-        p.textContent = 'Field is required'
-        p.style.color = 'red'
+    //   document.querySelector('input').addEventListener('blur', (e) => {
+    //     p.textContent = 'Field is required'
+    //     p.style.color = 'red'
 
-    })
+    // })
 
