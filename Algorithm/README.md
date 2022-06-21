@@ -1,17 +1,18 @@
 Topic for algorithm:-
     
-    0.Random
-    1.Analysis of Algorithms
-    2.String Algorithms
+    1.Two Pointers
+    2.Prefix Sum
     3.Searching 
     4.Sorting
     5.Number Theory
     6.Greedy Algorithms
     7.Recursion
     8.Divide and conquer
-    9.Dynamic Programming
-    10.Pattern Searching
-    11.Backtracking
+    9.Backtracking
+    10.Dynamic Programming
+    11.Pattern Searching
     12.Geometric Algorithms
-    13.Bitwise Manipulation
-    14.Graph Algorithms
+    13.Bit Manipulation
+    14.Graph and Tree Algorithms
+    15.Design
+

@@ -1,0 +1,6 @@
+
+  const webTechs = [
+ 
+    'Node',
+    'MongoDB'
+  ] 

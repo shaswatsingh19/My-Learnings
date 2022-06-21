@@ -1,4 +1,6 @@
-class CustomStack {
+class CustomStack{
+
+
     private int [] stack;
     private int top = -1;
     public CustomStack(int maxSize) {
