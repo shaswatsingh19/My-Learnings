@@ -1,0 +1,57 @@
+div{
+    width: 80px;
+    height: 80px;
+    background-color: goldenrod;
+    margin: auto;
+    margin-top: 20px;
+    /* opacity: 0; */
+}
+#margin{
+    width: 100px;
+    height:100px;
+    margin: 10px;
+    transition:all 1s 2s;
+    
+}
+#margin:hover{
+    transform: scale(3);
+    margin-left: 30px;
+    background-color: pink;
+}
+
+#scale{
+    transition: transform 3s 1s;
+    /* transform-origin:100%; */
+    transform: scale(1.2);
+}
+#translate{
+    transition: transform 4s 2s;
+}
+#translate:hover{
+    transform:translate(-150px,150px)
+}
+
+
+#rotate1{
+    transition: transform 2s 4s;
+    /* transform: rotate(720deg) */
+    /* transform:rotate(12turn); */
+    transform: rotate(400grad); /*400gradient = 1 Turn */
+}
+
+#rotate2{
+    transition: transform 2s 4s;
+    /* transform:rotate(12turn); */
+    /* transform: rotate(400grad); 400gradient = 1 Turn */
+    
+    transform: rotate(40deg);
+    transform-origin: left; /* the rotate point is not center as default as we change to left*/
+
+    /* Can also use top , top left , bottom as transform origin 
+    or % values too i.e. 0%,0% is the  body cornor points at top left so just 50% means top point*/
+}
+
+#skew{
+    transition: transform 3s 11s;
+    transform: skewX(10deg)
+}
