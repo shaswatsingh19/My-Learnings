@@ -1,6 +1,10 @@
+body{
+    perspective:500px 
+     /*Lesser the perspective the object is much closer to us   */
+}
 div{
-    width: 80px;
-    height: 80px;
+    height: 50px;
+    width: 200px;
     background-color: goldenrod;
     margin: auto;
     margin-top: 20px;
@@ -11,7 +15,6 @@ div{
     height:100px;
     margin: 10px;
     transition:all 1s 2s;
-    
 }
 #margin:hover{
     transform: scale(3);
@@ -28,7 +31,9 @@ div{
     transition: transform 4s 2s;
 }
 #translate:hover{
+    
     transform:translate(-150px,150px)
+    /* transform:translate3d(1,21,300) */
 }
 
 
@@ -52,6 +57,20 @@ div{
 }
 
 #skew{
-    transition: transform 3s 11s;
-    transform: skewX(10deg)
+    transition: transform 3s 1s;
+}
+#skew:hover{
+    transform: skewX(50deg)
+    
+}
+#translate3d{
+    transition: transform 2s;
+}
+
+
+#translate3d:hover{
+    transform: translateZ(200px)
+    /* our translateZ is 200px and perspective is 500px i.e the distance between image and our eye is 500px so it moves slow but if we reduce the perspective to 300px so it will move closer to us
+     */
+    /* transform: rotateZ(100turn); */
 }

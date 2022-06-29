@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating button effect</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+        a{
+            font-size: 40px;
+            /* border: 5px solid black; */
+            border-radius: 10px;
+            border-top: 5px solid black;
+            border-right: 5px solid black;
+            position: relative;
+            text-decoration: none;
+            padding:40px 80px;
+            color:black;
+            overflow: hidden;
+        }
+        
+        a::before{
+            content: '';
+            background-color: yellow;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            top:0;
+            left: 0;
+            transition: transform 1s , background-color 2s;
+            transform: rotate(90deg);
+            transform-origin:bottom left;
+        }
+        a:hover::before{
+            transform: rotate(0deg);
+            background-color: rgb(26, 230, 230);
+        }
+        
+    </style>
+</head>
+<body>
+    <a href="#"> Hover Me</a>
+    
+</body>
+</html>
