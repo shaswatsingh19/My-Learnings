@@ -1,11 +1,12 @@
 //https://leetcode.com/problems/reverse-integer/
-class Solution {
+class Solution{
     public int reverse(int x) {
         boolean pos = x > 0;
         x = Math.abs(x);
-        // String s = "";
+        // String s =  "";
         int temp = 0;
         int ans = 0;
+
         while(x >0){
             int rem = x % 10;
             
