@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+}
+
+.parent{
+    background-color: aqua;
+    padding: 50px;
+    width: 80%;
+    margin:0 auto;
+}
+.child{
+    background-color: bisque;
+    padding: 20px;
+    width: 50%;
+
+}
+h1{
+    margin-bottom: 10px;
+}
