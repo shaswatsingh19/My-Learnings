@@ -32,9 +32,6 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
         </div>
-
-
-
     </div>
     
     <div class="hero2">
@@ -47,9 +44,48 @@
                 <h2>Quick</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
-        </div>
-        
+        </div>        
     </div>
+
+    <!-- can do this method and wrap our three col section and two col section in different  and also use the above method but it increase overall css code to refactor -->
+    <section class="two-col">
+        <div class="container row"> <!--to reduce html we can add row to the container class div only-->
+            <!-- <div class="row"> -->
+                <div class="col">
+                    <h2>Cheap</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <div class="col">
+                    <h2>Quick</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+            <!-- </div>         -->
+        </div>
+    </section>
+    <!-- the above is far better as it reduce  the overall css executable code so that we don't need to make a new set of classes for new rows if added in future -->
+    <!-- As now we just need to code for four-col class if need as inside of it is already coded  -->
+    <section class="four-col">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Cheap</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <div class="col">
+                    <h2>Cheap</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <div class="col">
+                    <h2>Cheap</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <div class="col">
+                    <h2>Quick</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+            </div>        
+        </div>
+    </section>
 
 
 </body>

@@ -41,11 +41,13 @@ h1 {
 
 .row {
     /* display: flex => flex container */
+    /* important about flexbox that it will use as much as size it can to fit your content */
+    /* if for default it will do side scrolling if we put more flexitem then the width, so flex will always try to fit to the max size to make most of the content we write  */
+    /* If there is no item then flexbox try to lower the width to minimum size and increase the other content area to as max as possible     */
     display: flex;
 
     /* can't use yet */
     gap: 100px;
-    margin: 100px 0;
 }
 
 .col {
@@ -63,6 +65,7 @@ h1 {
     width: 60%;
 }
 
+/*used the decent selector  but try to use classes as much as possible, good practice */
 .hero p {
     margin-bottom: 3em;
 }
@@ -95,10 +98,13 @@ h1 {
     width: 80%;
     margin: 0 auto;
     gap: 80px;
-    padding: 80px 0;
 
 }
-
+.two-col{
+    background-color: #136C72;
+    text-align: center;
+    color: white;
+}
 
 
 @media screen and (max-width:600px) {
