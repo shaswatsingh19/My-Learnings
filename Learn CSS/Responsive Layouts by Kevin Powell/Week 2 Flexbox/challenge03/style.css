@@ -136,3 +136,9 @@ header {
     color: #fff;
     background-color: #136c72;
 }
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
