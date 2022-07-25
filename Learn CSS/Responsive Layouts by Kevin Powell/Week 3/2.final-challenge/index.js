@@ -3,5 +3,5 @@ const navList = document.querySelector('#nav-list')
 
 
 menu.addEventListener('click',()=>{
-    navList.classList.toggle('nav-visible')
+    navList.classList.toggle('nav-invisible')
 })

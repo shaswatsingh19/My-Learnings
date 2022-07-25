@@ -13,18 +13,18 @@
         <nav>
             <div id="nav-container">
                 <div id="logo">CRL</div>
-            <div id="menu">
-                <button class="nav-toggle" aria-label="open navigation">
-                    <span class="hamburger"></span>
-                </button>
-                <ul id="nav-list" class="nav-visible">
-                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Sign In</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link nav__link__active">Sign Up</a></li>
-                </ul>
-            </div>
+                <div id="menu">
+                    <button class="nav-toggle" aria-label="open navigation">
+                        <span class="hamburger"></span>
+                    </button>
+                    <ul id="nav-list" class="nav-invisible">
+                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Sign In</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link nav__link__active">Sign Up</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
         
@@ -34,93 +34,101 @@
                     <h1 class="header">Responsive layouts <span id="header">don't have to be a struggle</span></h1>
                 </div>
                 <div class="header-col col">
-                    <p>Lorem ipsum dolor sit amet, consectetur
+                    <p class="header__para">Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. </p>
-                    <a href="#">I want to learn</a>
+                    <a href="#" class="header__link nav__link__active">I want to learn</a>
                 </div>
             </div>
         </header>
 
-        <section class="section-feature row">
-            <div class="col">
-                <h3 class="section__feature__header">Mobile-First</h3>
-                <p class="section__feature__para">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed doeiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam.</p>
-            </div>
-            <div class="col">
-                <h3 class="section__feature__header">Efficient</h3>
-                <p class="section__feature__para">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed doeiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam.</p>
-            </div>
-            <div class="col">
-                <h3 class="section__feature__header">Done right</h3>
-                <p class="section__feature__para">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed doeiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam.</p>
+        <section class="section-feature">
+            <div class="row">
+                <div class="col">
+                    <h3 class="section__feature__header">Mobile-First</h3>
+                    <p class="section__feature__para">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed doeiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam.</p>
+                </div>
+                <div class="col">
+                    <h3 class="section__feature__header">Efficient</h3>
+                    <p class="section__feature__para">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed doeiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam.</p>
+                </div>
+                <div class="col">
+                    <h3 class="section__feature__header">Done right</h3>
+                    <p class="section__feature__para">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed doeiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam.</p>
+                </div>
             </div>
         </section>
 
-        <section class="section-main">
-            <div class="section__main__container">
-                <h3>It doesn't hae to be so hard</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam</p>
-                <div id="section__main__img">
-                    <img src="the-image.jpg" alt="website mockups">
+        <section class="section-main" >
+            <div class="row">
+                <div class="section__main__container">
+                    <h3>It doesn't have to be so hard</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <div id="section__main__img">
+                        <img src="the-image.jpg" alt="website mockups">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam
+                    </p>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-            </div>
-
-            <div class="section__main__sidebar row">
-                <div class="col">
-                    <h3 class="section__main__sidebar__header">Break it down</h3>
-                    <p class="section__main__sidebar__para">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed doeiusmod tempor incididunt utlabore et dolore magna aliqua.</p>
+    
+                <div class="section__main__sidebar">
+                    <div class="col">
+                        <h3 class="section__main__sidebar__header">Break it down</h3>
+                        <p class="section__main__sidebar__para">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed doeiusmod tempor incididunt utlabore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="col">
+                        <h3 class="section__main__sidebar__header">Work your way up</h3>
+                        <p class="section__main__sidebar__para">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed doeiusmod tempor incididunt utlabore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="col">
+                        <h3 class="section__main__sidebar__header">Have Patience</h3>
+                        <p class="section__main__sidebar__para">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed doeiusmod tempor incididunt utlabore et dolore magna aliqua.</p>                
+                    </div>
+    
                 </div>
-                <div class="col">
-                    <h3 class="section__main__sidebar__header">Work your way up</h3>
-                    <p class="section__main__sidebar__para">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed doeiusmod tempor incididunt utlabore et dolore magna aliqua.</p>
-                </div>
-                <div class="col">
-                    <h3 class="section__main__sidebar__header">Have Patience</h3>
-                    <p class="section__main__sidebar__para">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed doeiusmod tempor incididunt utlabore et dolore magna aliqua.</p>                
-                </div>
-
             </div>
         </section>
 
 
         <footer>
-            <h1 class="footer-heading">just scrathing the surface</h1>
-            <div class="row">
-                <div class="col">
-                    <h4>About our company</h4>
-                    <p class="footer__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                </div>
-                <div class="col">
-                    <h4>Getting around</h4>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Contact</p>
-                    
-                </div>
-                <div class="col">
-                    <h4>About our company</h4>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Contact</p>
-                    <p>Pata nahi</p>
-                </div>
-                <div class="col">
-                    <h4>About our company</h4>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Contact</p>
-                    <p>Pata Nahi</p>
+            <div class="footer-container">
+                <h1 id="footer-heading">just scratching the surface</h1>
+                <div class="row">
+                    <div class="col">
+                        <h4>About our company</h4>
+                        <p class="footer__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <div class="row2">
+                        <div class="col">
+                            <h4>Getting around</h4>
+                            <p class="footer__para">Home</p>
+                            <p class="footer__para">About</p>
+                            <p class="footer__para">Contact</p>
+                            
+                        </div>
+                        <div class="col">
+                            <h4>About our company</h4>
+                            <p class="footer__para">Home</p>
+                            <p class="footer__para">About</p>
+                            <p class="footer__para">Contact</p>
+                            <p class="footer__para">Pata nahi</p>
+                        </div>
+                        <div class="col">
+                            <h4>Other Things</h4>
+                            <p class="footer__para">Home</p>
+                            <p class="footer__para">About</p>
+                            <p class="footer__para">Contact</p>
+                            <p class="footer__para">Pata Nahi</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>

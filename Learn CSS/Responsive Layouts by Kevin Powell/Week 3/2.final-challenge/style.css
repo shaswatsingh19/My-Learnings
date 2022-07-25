@@ -7,7 +7,9 @@
 a{
     text-decoration: none;
     cursor: pointer;
-    color: black;
+    color: white;
+    text-transform: uppercase;
+    
 }
 li{
     list-style-type: none;
@@ -18,6 +20,20 @@ ul{
 
 img{
     width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgb(37, 66, 37);
+    /* max-width: 500px; */
+    margin-bottom: 20px;
+}
+h1,h2,h3,h4{
+    font-family: var(--primary-font);
+}
+p{
+    font-family: var(--secondary-font);
+}
+.container{
+    /* max-width: 1200px; */
+    margin: 0 auto;
 }
 
 
@@ -26,6 +42,7 @@ nav{
     background-color: #2E323F;
 }
 #nav-container{
+    max-width: 1200px;
     width: 90%;
     margin: 0 auto;
     font-family:var(--primary-font) ;
@@ -96,16 +113,14 @@ nav{
     transform: translateY(3px);
 }
 
-.nav-visible{
+.nav-invisible{
     display: none;
 }
 
 .nav__item{
     margin-top: 16px;
 }
-.nav__link {
-    color: white;
-}
+
 
 .nav__link__active{
     background-color: #A59678;
@@ -116,36 +131,142 @@ nav{
 /* main section */
 
 header{
-    padding: 50px 0;
+    padding: 100px 0;
     background-color: #3B4050;
 }
 .row{
+    max-width: 1200px;
     width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: space-between;
 }
-h1{
-    font-family: var(--primary-font);
-    font-size: 50px;
-}
+
 .header{
     color:white;
+    font-family: var(--primary-font);
+    font-size: 55px;
+    margin-bottom: 20px;
 }
 #header{
     color: #A59678;
 }
+.header__para{
+    color:white;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: var(--secondary-font);
+}
 
+.header__link{
+    color:white;
+    font-family: var(--primary-font);
+    padding: 5px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 
+/* section feature */
+.section-feature{
+    background-color: #e2e2e3;
+    padding: 50px 0;
+}
+.section__feature__header{
+    color: #A59678;
+    font-family: var(--primary-font);
+    font-size: 20px;
+    text-align: center;
+}
+.section__feature__para{
+    margin: 5px auto 15px auto;
+}
 
+/* section main */
 
+.section-main{
+    background-color: #e8dddd;
+    padding: 50px 0;
+}
+.section__main__container h3{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color:#A59678
+}
+.section__main__container p{
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+.section__main__sidebar{
+    margin: 0;
+    text-align: center;
+}
+.section__main__sidebar .col{
+    background-color: #3B4050;
+    margin-bottom: 30px;
+    color: white;
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.section__main__container p{
+    font-size: 20px;
+}
+.section__main__sidebar__header{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.section__main__sidebar__para{
+    color:#a9adba;
+}
+
+footer{
+    background-color: #3B4050;
+}
+.footer-container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.footer-container .row{
+    align-items: center;
+    padding: 20px 0;
+    align-items: flex-start;
+}
+.footer-container .row .col{
+    width: 100%;
+}
+#footer-heading{
+    color:#fff;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+h4{
+    color: #A59678;
+}
+.footer__para{
+    color:#6F737F;
+    margin-top: 5px;
+    line-height: 1.8;
+}
+.row2{
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    
+}
+.row2 .col + .col{
+    margin-left: 40px;
+    width: 100%;
+}
 
 /* Medium Size screen */
 @media screen and (min-width:700px) {
-    body{
-        background-color: red;
-    }
+    
     nav{
         flex-direction: row;
         align-items: center;
@@ -163,11 +284,40 @@ h1{
     .row{
         flex-direction: row;
     }
+    .header{ 
+        margin-bottom: 0px;
+        margin-right: 10px;
+    }
+    .section-feature .col+.col{
+        margin-left: 40px;
+    }
+    .section__feature__para{
+        text-align: center;
+    }
+    
+    .section-main .row{
+        flex-direction: column;
+    }
+    .section__main__container h3{
+        font-size: 45px;
+        text-align: left;
+    }
+    
+    
 }
 
 /* Large Screen */
 @media screen and (min-width:1000px) {
-    body{
-        background-color: green;
+    
+    .section-main .row{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .section__main__container{
+        width: 52%;
+    }
+    .section__main__sidebar{
+        width: 38%;
     }
 }
