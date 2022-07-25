@@ -82,7 +82,6 @@ header {
     background: #072A2D;
     color: white;
     transition: opacity 250ms ease;
-    
     position: absolute;
     left: 0;
 }
