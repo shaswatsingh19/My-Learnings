@@ -28,7 +28,7 @@ h1{
     
     flex-direction: column;
 }
-.challenges a{
+ a{
     text-decoration: none;
     margin-right: 10px;
     margin-top: 20px;
