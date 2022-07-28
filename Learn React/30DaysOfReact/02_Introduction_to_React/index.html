@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React app</title>
+    <style>
+        header{
+            background-color: red;
+        }
+        .header-class{
+            border-radius: 50px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #div-container{
+            border: 5px darkcyan ;
+            border-style: groove;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="root">
+
+    </div>
+    
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type ='text/babel'>
+        // your code goes here
+        // ReactDOM.render(header , root) old version of react 
+        
+        // const root = document.querySelector('.root')
+        
+        /* provide className or using tag name we can provide style */
+        // injecting dynamic data 
+        const author = {firstName:'Asabeneh' , lastName :'Yetayeh'}
+        const welcome = 'Welcome to 30 days of React and become a React Developer'
+
+        const heade =  (<header className='header-class'>
+                        <h1>{welcome}</h1>  
+                        <h2>Getting Started React</h2>
+                        <h3>JavaScript Library</h3>
+                        <p>Instructor : {author.firstName} {author.lastName} </p>
+                        <small>Oct 2, 2020</small>
+                    </header>)
+        
+        
+        const yearBorn = 1820
+        const currentYear = new Date().getFullYear()
+        const age = currentYear - yearBorn
+        const personAge = (
+                            <p>
+                            {' '}
+                            {author.firstName} {author.lastName} is {age} years old
+                            </p>
+        )
+        const prerequisiteSkill = ['HTML',"CSS","Javascript"]
+        
+        // we have to give key so that we can identify seprately
+        const prerequisiteSkillFormatted = prerequisiteSkill.map((skill) => <li key={skill}>{skill}</li>)
+        const main = (
+            // inline style can also be provide with {{ styles }}
+            <main style = {{ border:'4px dotted green'}}>
+                <p>Prerequisite to get started react.js:</p>
+                <ul>
+                    <li>{prerequisiteSkill[0]}</li>
+                    <li>{prerequisiteSkill[1]}</li>
+                    <li>{prerequisiteSkill[2]}</li>
+                </ul>
+                
+                <ul>{prerequisiteSkill}</ul>
+
+                <ul>{prerequisiteSkillFormatted}</ul>   
+                {personAge}
+
+            </main>
+        )
+        const footerStyle = { color :'blue' , textTransform:'uppercase'}
+
+        const footer = (
+            <footer style = {footerStyle}>
+                <p>Copyright 2022</p>
+                </footer>
+                // <h1>sd</h1> can only contain one element
+        )
+
+        let a = 2
+        let b = 3
+        const result = (
+            <p>{a}+{b} = {a+b}</p>
+        )
+        const app = (
+            <div id ='div-container'>
+                {heade}
+                {main}
+                {footer}
+                {result}
+            </div>
+        )
+
+        // React 18
+        // ReactDOM.createRoot(document.querySelector('.root')).render(header)
+        const rootEle = ReactDOM.createRoot(document.querySelector('.root'))
+        
+        rootEle.render(app)
+
+    </script>
+</body>
+</html>

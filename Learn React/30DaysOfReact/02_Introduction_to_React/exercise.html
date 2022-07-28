@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise day 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #app-container{
+            background: linear-gradient(45deg , rgb(169, 111, 111), rgb(105, 105, 74),rgb(145, 207, 145));
+        }
+        p{
+            background-color: rgb(77, 161, 187);
+            margin: 10px auto;
+            padding: 10px;
+        }
+        header p{
+            border-radius: 20px;
+
+        }
+        footer{
+            width: 100%;
+        }
+        .footer-wrapper{
+            position:absolute;
+            bottom: 0;
+        }
+        
+        .footer-wrapper p{
+            margin: 0;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div id = 'root'></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <script type ='text/babel'>
+
+        let myName = { firstName :"Shaswat" , lastName : "Singh"}
+        const author = {firstName:'Asabeneh' , lastName :'Yetayeh'}
+        
+        let age = 25
+        let country = 'India'
+        let gender = 'Male'
+        let title = ['He','His','Him']
+        let titleFormatted = title.map((t) => <li key={t}>{t}</li>)
+        let email = 'shaswatsingh.ose@gmail.com'
+        
+        let introStyle = {color:"black" , padding:"10px"}
+        const intro = (
+            <header style = {introStyle}>
+                <h1>Name : {myName.firstName} {myName.lastName} </h1>
+                <p>I am {age} years old</p>
+                <p>I am from {country}</p>
+                <p>I am a {gender}</p>
+                <p>My pronoun are {titleFormatted}</p>
+            </header>
+        )
+
+        const footer = (
+            <footer className = 'footer-wrapper'>
+                <p>Contact me at {email}</p>    
+            </footer>
+        )
+        const app = (
+            <div id='app-container'>
+                {intro}
+                {footer}
+            </div>
+        )
+
+        const root = ReactDOM.createRoot(document.querySelector("#root"))
+        root.render(app)
+
+    </script>
+
+</body>
+</html>
