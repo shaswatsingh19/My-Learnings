@@ -1,6 +1,6 @@
 # My Learnings
 
-GitHub Repository for storing the Code while learning different tech stack.I write code in PYTHON, JAVA and JavaScript. 
+GitHub Repository for storing the Code while learning different tech stack.I write code in PYTHON, JavaScript and java.
 
 LeetCode Handle:- @shaswatsingh19 
 
