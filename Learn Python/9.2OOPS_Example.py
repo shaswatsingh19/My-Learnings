@@ -1,5 +1,5 @@
 class Student:
-    name = “Parikh”
+    name = 'Parikh'
 
     def store_details(self):
         self.age = 60

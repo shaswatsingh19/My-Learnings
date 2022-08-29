@@ -1,6 +1,6 @@
 //https://workat.tech/problem-solving/practice/merge-two-sorted-arrays/
-class Solution {
-	int[] mergeSortedArrays(int[] A, int[] B) {
+class Solution24 {
+	int[] MergeSort(int[] A, int[] B) {
 	    // add your logic here
 		int [] C = new int [A.length+B.length];
 		int a=0;

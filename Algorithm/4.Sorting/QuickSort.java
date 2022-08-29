@@ -1,4 +1,4 @@
-public class SortingQuickSort {
+public class QuickSort {
 
     
      static int partition(int [] arr,int l,int h){

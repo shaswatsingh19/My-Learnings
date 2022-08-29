@@ -13,7 +13,7 @@
 //     }
 // }
 import java.util.Arrays;
-class Solution {
+class Solution11 {
     public boolean containsDuplicate(int[] nums) {
         
         Arrays.sort(nums);
