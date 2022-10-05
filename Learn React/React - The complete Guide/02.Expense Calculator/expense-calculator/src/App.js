@@ -1,7 +1,7 @@
 import ExpenseItem from './components/ExpenseItem'
 import {ExpenseDate}  from './ExpenseDate'
 
-export default function App(){
+const App = () => {
     
     const expenseComponent = ExpenseDate.map(expense => {
         return (
@@ -21,3 +21,7 @@ export default function App(){
         </>
     )
 }
+
+export default App ;
+
+
