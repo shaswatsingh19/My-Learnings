@@ -1,4 +1,4 @@
-export const ExpenseDate =   [
+export const ExpenseData =   [
     {
         id:1,
         date : new Date(2022,4,4),
