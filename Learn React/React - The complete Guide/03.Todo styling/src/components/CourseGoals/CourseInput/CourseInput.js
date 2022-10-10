@@ -20,9 +20,8 @@ const CourseInput = props => {
     if(enteredValue.trim() === ''){
       setIsValid(false)
       return
-    }
-    props.onAddGoal(enteredValue);    
-  };
+    }props.onAddGoal(enteredValue);    
+  } ;
 
   return (
     <form onSubmit={formSubmitHandler}>
