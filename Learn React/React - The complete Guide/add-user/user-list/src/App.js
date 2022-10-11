@@ -11,8 +11,10 @@ function App() {
     setUserList((prevState) => {
       return [...prevState,{name:uName,age:uAge ,id:Math.random().toString()}]
     })
-
   }
+
+
+
   return (
     <div>
       <AddUsers onAddUser={addUserHandler}/>

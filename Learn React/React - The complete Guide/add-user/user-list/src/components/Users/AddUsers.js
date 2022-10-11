@@ -3,6 +3,7 @@ import Card from '../UI/Card'
 import Button from '../UI/Button'
 
 import classes from './AddUsers.module.css'
+import ErrorModal from '../UI/ErrorModal'
 
 
 
@@ -12,38 +13,60 @@ export default function AddUsers(props){
         'username' : '',
         'age' : ''
     })
+    const [error , setError ] = React.useState()
     
     function submitHandler(event){
         event.preventDefault();
         
-        if(formData.username.trim() === 0 || formData.age.trim === 0){
+        if(formData.username.trim().length === 0 || formData.age.trim().length === 0){
+            console.log(formData)
+            setError({
+                'title':'Invalid Input',
+                'message':'Please Enter Valid name or age(in years)'
+            })
             return
         }
         // adding a + before converts it to a interger
         if(+formData.age < 1){
-            return
+            setError({
+                'title':'Invalid Age',
+                'message':'Please Enter age( > 0)'
+            })
+            return                   
+            
         }
-        console.log(formData)
+        
         props.onAddUser(formData.username,formData.age)
 
-        setFormData({
-            'username':"",
-            'age':""
+        setFormData((prevState) => {
+            return {
+                ...prevState,
+                'username':"",
+                'age':""
+            }
         })
+        
     }
 
     function changeHandler(event){
         const {name,value } = event.target
 
+        console.log(name,value)
         setFormData((prevState) => {
-            
             return {
                 ...prevState,
-                [name] : value}
+                [name] : value
+            }
         })
+    }
+
+    function errorHandler(){
+        setFormData(null)
     }
     
     return (
+        <div>
+        {error && (<ErrorModal title={error.title} message={error.message} onClick={errorHandler}/>)}
         <Card className={classes.input}>
             <form onSubmit={submitHandler} >
                 <label htmlFor='username'>User Name:</label>
@@ -52,8 +75,8 @@ export default function AddUsers(props){
                 <input type='number' id='age' name='age' value={formData.age} onChange={changeHandler} />
                 <Button type='submit'>ADD Users</Button>
             </form>
-            
         </Card>
+        </div>
     )
 }
 
