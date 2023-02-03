@@ -1,0 +1,19 @@
+.card{
+    display: block;
+    padding: $base-padding; // we can use here as it is below while importing
+    border: $base-border-thickness solid #123;
+    box-shadow: $base-box-shadow;
+
+    .card-title{
+        font-size: $base-font-size;
+        padding-bottom: $base-padding;
+        font-weight: bold;
+    }
+    .card-body{
+        font-size: $base-font-size;
+        
+        a{
+            text-decoration: underline;
+        }
+    }
+}

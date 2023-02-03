@@ -1,16 +1,26 @@
+
+// after compiling from scss to css it will be empty as there is no 
+// actual css written here 
+// now with _variable it is not compiled directly into css 
+
 //theme color
-$primary :rgb(63, 173, 197);
-$secondary: rgb(49, 25, 25);
-$info : red;
+$primary :#326dee;
+$secondary: #1ac888;
+$info : #f6c31c;
+$error : #d32752;
 
 //spacing
 $base-padding:0.75rem;
 $base-margin:0.75rem;
 
 //border 
-$base-thickness : 2px;
+$base-border-thickness : 1px;
 $base-border-radius: 20px;
 
-// after compiling from scss to css it will be empty as there is no 
-// actual css written here 
-// now with _variable it is not compiled directly into css 
+// box-shadow
+$base-box-shadow : 1px 3px 5px rgba(0,0,0,.1);
+
+// font-size
+$base-font-size : 1rem;
+$base-font-size-sm : $base-font-size * .75; // can use math operation
+$base-font-size-lg : $base-font-size * 1.5 ;
