@@ -28,8 +28,19 @@ img {
 }
 
 ul {
-  color: red;
+  margin: 10px;
+  padding: 0.75rem;
+  border: 2px solid #3bf9a3;
+  border-radius: 20px;
 }
 ul li {
-  border: 1px solid magenta;
+  padding: 0.75rem;
+  margin: 0.75rem auto;
+  border: 2px solid rgb(49, 25, 25);
+  border-radius: 20px;
+}
+
+h1 {
+  color: rgb(63, 173, 197);
+  border-bottom: 1px solid rgb(49, 25, 25);
 }

@@ -6,6 +6,19 @@
   color: inherit;
   margin: 0;
 }
+//theme color
+$primary :rgb(63, 173, 197);
+$secondary: rgb(49, 25, 25);
+$info : #3bf9a3;
+
+//spacing
+$base-padding:0.75rem;
+$base-margin:0.75rem;
+
+//border 
+$base-thickness : 2px;
+$base-border-radius: 20px;
+
 
 body {
   font-family: Poppins;
@@ -30,8 +43,19 @@ img {
 }
 
 ul{
-  color: red;
+  margin: 10px;
+  padding: $base-padding;
+  border: $base-thickness solid $info;
+  border-radius: $base-border-radius;
   li{
-    border: 1px solid magenta;
+    padding:$base-padding;
+    margin: $base-margin auto;
+    border: $base-thickness solid $secondary;
+    border-radius: $base-border-radius;
   }
+}
+
+h1{
+  color: $primary;
+  border-bottom: 1px solid $secondary;
 }
