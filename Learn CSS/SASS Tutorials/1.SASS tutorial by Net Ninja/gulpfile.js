@@ -4,7 +4,7 @@ const sass = require('gulp-sass')(require('sass'))
 
 // create our index.scss to css and dump to a css folder which is destination
 function buildStyles(){
-    return src('index.scss')
+    return src('hocxcss/**/*.scss')
         .pipe(sass())
         .pipe(dest('css'))
 }
@@ -14,7 +14,8 @@ function buildStyles(){
 // watch takes array of files to watch
 // second argument is the function that it will run when the file changes
 function watchTask(){
-    return watch(['index.scss'] , buildStyles)
+    // return watch(['index.scss'] , buildStyles) with adding * means anyfile with .scss extension to watch
+    return watch(['hocxcss/**/*.scss'] , buildStyles)
 }
 
 //to run

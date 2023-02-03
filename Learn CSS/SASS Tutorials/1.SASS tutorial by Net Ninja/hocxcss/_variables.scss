@@ -1,0 +1,16 @@
+//theme color
+$primary :rgb(63, 173, 197);
+$secondary: rgb(49, 25, 25);
+$info : red;
+
+//spacing
+$base-padding:0.75rem;
+$base-margin:0.75rem;
+
+//border 
+$base-thickness : 2px;
+$base-border-radius: 20px;
+
+// after compiling from scss to css it will be empty as there is no 
+// actual css written here 
+// now with _variable it is not compiled directly into css 
